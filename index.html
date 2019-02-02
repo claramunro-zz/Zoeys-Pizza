@@ -1,28 +1,86 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+<head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/scripts.js"></script>
-    <title>Pizza Pizza</title>
-  </head>
-  <body>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Zoey's Pizza</title>
+</head>
 
-    <div class="container-fluid">
-            <div class="row">
+<body>
 
-                <div class="col-md-12 padding text-center">
-                    <h1>Zoeys Pizza</h1>
-                    <p>Player 1 Total Score:<br><span id="player1TotalScore"></p>
-                    <div id="buttonsPlayer1">
-                    <button id="rolldice1" class="btn btn-lg" type="submit">ROll DICE</button>
-                    <button id="hold1" class="btn btn-lg" type="submit">HOLD</button>
-                  </div>
-                </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-light sticky-top bg-light">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/zoey.png" id="logo" class="d-inline-block align-top" alt="">
+            <h1>zoeyspizza</h1>
+        </a>
+    </nav>
 
-              </div>
+    <!-- cards section with size inputs -->
+    <div class="container-fluid" id="pizzaAreaInput">
+        <div class="row padding">
+            <div class="col-12 text-center">
+                <h3>craft your pizza</h3>
             </div>
+        </div>
 
-  </body>
+        <div class="row padding">
+            <div class="col-12 text-center">
+                <form id="newPizza">
+                    <h4>size</h4>
+                    <input type="radio" value="small" name="sizePizza">small<br>
+                    <input type="radio" value="medium" name="sizePizza">medium<br>
+                    <input type="radio" value="large" name="sizePizza">large<br>
+            </div>
+        </div>
+
+        <div class="row padding">
+            <div class="col-12 text-center">
+                <h4>toppings</h4>
+                <input id="cheese" type="checkbox" value="cheese" name="toppings">cheese<br>
+                <input id="pineapple" type="checkbox" value="pineapple" name="toppings">pineapple<br>
+                <input id="pepperoni" type="checkbox" value="pepperoni" name="toppings">pepperoni<br>
+                <input id="mushrooms" type="checkbox" value="mushrooms" name="toppings">mushrooms<br>
+                <input id="goatcheese" type="checkbox" value="goatcheese" name="toppings">goat cheese<br>
+                <input id="spinach" type="checkbox" value="spinach" name="toppings">spinach<br>
+                <input id="jalapenos" type="checkbox" value="jalapenos" name="toppings">jalapenos<br>
+                <input id="siracha" type="checkbox" value="siracha" name="toppings">siracha<br>
+            </div>
+        </div>
+
+        <div class="row padding">
+            <div class="col-12 text-center">
+                <button type="submit">now get' in the oven</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- output area -->
+    <div class="row padding">
+        <div class="col-12" id="output-2">
+            <h1 id="output"></h1>
+        </div>
+    </div>
+
+    <!-- near footer section -->
+    <div class="container-fluid">
+        <div class="row padding" id="hero">
+            <div class="col-12">
+                <h2>we make it crispy</h2>
+            </div>
+        </div>
+    </div>
+
+    <!--- socket -->
+    <footer>
+        <div class="col-12" id="socket">
+            <h5>&copy; <a href="index.html">zoeyspizza</a></h5>
+        </div>
+    </footer>
+
+</body>
+
 </html>

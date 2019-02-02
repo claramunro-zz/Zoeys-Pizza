@@ -1,0 +1,60 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: monospace;
+    color: white;
+    background-color: #B82306;
+    padding-bottom: 60px;
+  }
+
+h1 {
+    display: inline;
+    line-height: 28px;
+}
+
+.row {
+    padding: 10px 50px 10px 50px;
+}
+
+#logo {
+    height: 30px;
+    padding-right: 15px;
+    line-height: 30px;
+}
+
+a {
+    color: white;
+}
+
+#hero {
+    text-align: right;
+    color: white;
+    text-decoration: underline;
+    background-color: darkred;
+    padding: 20px;
+}
+
+#pizzaAreaInput {
+    text-align: left;
+    padding-top: 50px;
+    margin-bottom: 30px;
+}
+
+input {
+    margin-right: 20px;
+}
+
+footer {
+    background-color: black;
+    border-top: white 2px solid;
+    padding: 10px;
+}
+
+#output-2 {
+    text-align: right;
+}
+
+#output {
+    display: none;
+
+}
